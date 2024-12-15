@@ -1,0 +1,56 @@
+{
+  "id": "5daf1f28-09ac-42e8-b577-289336a1ca20",
+  "version": "2.0",
+  "name": "prepis manual na automat nay",
+  "url": "https://www.nay.sk/",
+  "tests": [{
+    "id": "b701264d-c3d2-49fe-ad32-2b5dce90ea1b",
+    "name": "TC_01_Nay_search_bluetoth_headphone_verify",
+    "commands": [{
+      "id": "968a7927-2053-4a9c-9bae-ad23d5678548",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.nay.sk",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "935b2a69-6081-4eb4-91de-70db7a617d11",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "92c9718b-73d4-419b-a310-a7827d35b83a",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@placeholder=\"Zadajte text pre vyhľadávanie\"]",
+      "targets": [],
+      "value": "slúchadlá"
+    }, {
+      "id": "28a82678-1669-452e-93d5-477841d8e517",
+      "comment": "",
+      "command": "clickAt",
+      "target": "xpath=//div[@id=\"header\"]/div[1]/div[1]/div[2]/form/div[2]/div[2]/div/div/div[2]/div/div[1]/ul/li[1]/a/span",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c457f24e-f579-4b6f-ac12-27f1a8285f1f",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[@id=\"__layout\"]/div/div[3]/div[3]/section[1]/div[1]/h1",
+      "targets": [],
+      "value": "BLUETOOTH SLÚCHADLÁ "
+    }]
+  }],
+  "suites": [{
+    "id": "1b82e2e3-22d9-4d84-a451-5213ee31aa4a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.nay.sk/"],
+  "plugins": []
+}
